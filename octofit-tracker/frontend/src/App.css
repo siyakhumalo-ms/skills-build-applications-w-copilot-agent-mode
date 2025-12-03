@@ -1,0 +1,121 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e3f0ff 100%);
+  min-height: 100vh;
+  color: #22223b;
+}
+
+
+.App-logo {
+  height: 60px;
+  width: auto;
+  pointer-events: none;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background: linear-gradient(90deg, #3a86ff 0%, #8338ec 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+
+.App-link {
+  color: #3a86ff;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.App-link:hover {
+  color: #8338ec;
+}
+
+/* Bootstrap overrides */
+.navbar {
+  background: linear-gradient(90deg, #3a86ff 0%, #8338ec 100%) !important;
+  box-shadow: 0 2px 8px rgba(58,134,255,0.08);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:focus {
+  color: #ffbe0b !important;
+}
+.table {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(58,134,255,0.05);
+}
+.table-primary th {
+  background: #3a86ff !important;
+  color: #fff;
+}
+.table-success th {
+  background: #06d6a0 !important;
+  color: #fff;
+}
+.table-info th {
+  background: #00b4d8 !important;
+  color: #fff;
+}
+.table-warning th {
+  background: #ffbe0b !important;
+  color: #22223b;
+}
+.table-danger th {
+  background: #ef233c !important;
+  color: #fff;
+}
+.btn {
+  background: linear-gradient(90deg, #3a86ff 0%, #8338ec 100%);
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(58,134,255,0.08);
+  transition: background 0.2s;
+}
+.btn:hover, .btn:focus {
+  background: linear-gradient(90deg, #8338ec 0%, #3a86ff 100%);
+  color: #ffbe0b;
+}
+h1, h2, h3, h4, h5 {
+  color: #3a86ff;
+  font-weight: 700;
+}
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(58,134,255,0.08);
+  border: none;
+}
+.modal-content {
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(58,134,255,0.12);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
